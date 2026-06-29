@@ -1,0 +1,9 @@
+{
+  "name": "Academix LMS",
+  "description": "A fully featured digital Learning Management System with integrated course materials, exams, secure webcam/screen proctoring, fee tracking, and complaints management.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

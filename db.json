@@ -1,0 +1,268 @@
+{
+  "users": [
+    {
+      "_id": "user_admin_1",
+      "name": "Admin Director",
+      "email": "admin@lms.edu",
+      "role": "admin",
+      "passwordHash": "$2b$10$aZkFJqV2L6cbQTkY5tDwl.hcZJznGun.wtRSuelj0Z3WbZwPZC4K6"
+    },
+    {
+      "_id": "user_student_1",
+      "name": "Alice Johnson",
+      "email": "alice.j@lms.edu",
+      "role": "student",
+      "passwordHash": "$2b$10$aZkFJqV2L6cbQTkY5tDwl.V3QXiMPBszU7K1nf7sziiMtN.YXTpCG"
+    },
+    {
+      "_id": "user_1782666787799",
+      "name": "اسعد العرد",
+      "email": "asaadalshmeri@gmail.com",
+      "role": "student",
+      "passwordHash": "$2b$10$b0jkdnskoOSr9f/8K6HI5e.B5uYY09OO.nhHctFMF94aZQPM33jtW"
+    }
+  ],
+  "students": [
+    {
+      "_id": "student_1",
+      "userId": "user_student_1",
+      "fullName": {
+        "firstName": "Alice",
+        "middleName": "Marie",
+        "lastName": "Johnson",
+        "familyName": "Smith"
+      },
+      "academicId": "202600001",
+      "photo": "",
+      "documents": [],
+      "departmentId": "dept_cs",
+      "status": "Active",
+      "createdAt": "2026-06-28T15:50:55.734Z"
+    },
+    {
+      "_id": "student_1782666787799",
+      "userId": "user_1782666787799",
+      "fullName": {
+        "firstName": "اسعد",
+        "middleName": "الشميري",
+        "lastName": "العرد",
+        "familyName": "عراده"
+      },
+      "academicId": "202600002",
+      "photo": "",
+      "documents": [],
+      "departmentId": "dept_cs",
+      "status": "Active",
+      "createdAt": "2026-06-28T17:13:07.799Z"
+    }
+  ],
+  "departments": [
+    {
+      "_id": "dept_cs",
+      "name": "Computer Science",
+      "description": "Study of computation, information, and automation, covering AI, systems, and algorithms.",
+      "headOfDepartment": "Dr. Alan Turing"
+    },
+    {
+      "_id": "dept_ee",
+      "name": "Electrical Engineering",
+      "description": "Focuses on electricity, electronics, and electromagnetism, including power systems and digital logic.",
+      "headOfDepartment": "Dr. Nikola Tesla"
+    },
+    {
+      "_id": "dept_me",
+      "name": "Mechanical Engineering",
+      "description": "Deals with the design, analysis, manufacturing, and maintenance of mechanical systems.",
+      "headOfDepartment": "Dr. James Watt"
+    }
+  ],
+  "lectures": [
+    {
+      "_id": "lec_1",
+      "departmentId": "dept_cs",
+      "courseName": "Introduction to Algorithms",
+      "lectureNumber": 1,
+      "instructor": "Dr. Alan Turing",
+      "youtubeLink": "https://www.youtube.com/embed/0IAPZzGSbME",
+      "pdfContent": "Algorithms are step-by-step procedures for calculations. Lecture 1 covers Time Complexity, Big O Notation, and basic sorting algorithms (Bubble Sort, Selection Sort, Insertion Sort). Make sure to complete the attached assignment on Big O bounds.",
+      "diagrams": [],
+      "assignmentId": "assign_1",
+      "attendance": []
+    }
+  ],
+  "assignments": [
+    {
+      "_id": "assign_1",
+      "lectureId": "lec_1",
+      "title": "Time Complexity Analysis",
+      "description": "Analyze the running time of the provided pseudo-codes and prove their Big O bounds. Submit a single PDF with your proofs.",
+      "dueDate": "2026-07-05",
+      "submissions": [
+        {
+          "studentId": "student_1",
+          "fileUrl": "data:application/pdf;base64,JVBERi0xLjQKJ...",
+          "fileName": "algorithms_proof_alice.pdf",
+          "submittedAt": "2026-06-28T16:00:00.000Z"
+        }
+      ]
+    }
+  ],
+  "exams": [
+    {
+      "_id": "exam_1",
+      "departmentId": "dept_cs",
+      "courseName": "Midterm Algorithm Assessment",
+      "date": "2026-07-01",
+      "time": "10:00",
+      "duration": 60,
+      "questions": [
+        {
+          "id": "q1",
+          "type": "mcq",
+          "questionText": "What is the worst-case time complexity of Quick Sort?",
+          "options": [
+            "O(N log N)",
+            "O(N^2)",
+            "O(N)",
+            "O(1)"
+          ],
+          "correctAnswer": "O(N^2)"
+        },
+        {
+          "id": "q2",
+          "type": "mcq",
+          "questionText": "Which data structure uses LIFO (Last In First Out) order?",
+          "options": [
+            "Queue",
+            "Stack",
+            "Linked List",
+            "Binary Tree"
+          ],
+          "correctAnswer": "Stack"
+        },
+        {
+          "id": "q3",
+          "type": "essay",
+          "questionText": "Explain the difference between Dynamic Programming and Greedy Algorithms with an example."
+        }
+      ],
+      "results": [
+        {
+          "studentId": "student_1",
+          "answers": [
+            {
+              "questionId": "q1",
+              "answerText": "O(N^2)"
+            },
+            {
+              "questionId": "q2",
+              "answerText": "Stack"
+            },
+            {
+              "questionId": "q3",
+              "answerText": "البرمجة الديناميكية (Dynamic Programming) تعتمد على تقسيم المشكلة إلى مشاكل فرعية وحفظ حلولها لتفادي التكرار (مثل متتالية فيبوناتشي). بينما الخوارزميات الجشعة (Greedy Algorithms) تختار الخيار الأفضل محلياً في كل خطوة على أمل الوصول إلى الحل الأمثل الشامل (مثل خوارزمية ديكسترا)."
+            }
+          ],
+          "score": 50,
+          "cameraRecording": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=400",
+          "screenRecording": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=400",
+          "submittedAt": "2026-06-28T16:30:00.000Z"
+        },
+        {
+          "studentId": "student_1782666787799",
+          "answers": [
+            {
+              "questionId": "q1",
+              "answerText": ""
+            },
+            {
+              "questionId": "q2",
+              "answerText": ""
+            },
+            {
+              "questionId": "q3",
+              "answerText": ""
+            }
+          ],
+          "score": 0,
+          "cameraRecording": "data:video/webm;base64,SIMULATED_PROCTOR_WEBCAM_STREAM_RECORDING",
+          "screenRecording": "data:video/webm;base64,SIMULATED_SCREEN_RECORDING_STREAM",
+          "submittedAt": "2026-06-28T17:49:06.929Z"
+        }
+      ]
+    },
+    {
+      "_id": "exam_demo",
+      "departmentId": "dept_cs",
+      "courseName": "تجربة منصة الامتحانات الرقمية",
+      "title": "الاختبار التجريبي الموحد (نظام المراقبة الذكية)",
+      "date": "2026-06-30",
+      "time": "12:00",
+      "duration": 30,
+      "maxScore": 100,
+      "questions": [
+        {
+          "id": "q_demo_1",
+          "type": "mcq",
+          "questionText": "أي خوارزمية مما يلي تعد الأسرع لترتيب مصفوفة عشوائية في الحالة المتوسطة؟",
+          "options": [
+            "ترتيب الفقاعة (Bubble Sort)",
+            "الترتيب السريع (Quick Sort)",
+            "ترتيب الاختيار (Selection Sort)",
+            "لا شيء مما ذكر"
+          ],
+          "correctAnswer": "الترتيب السريع (Quick Sort)"
+        },
+        {
+          "id": "q_demo_2",
+          "type": "mcq",
+          "questionText": "ما هي ميزة الاستدعاء الذاتي (Recursion) في كتابة الشفرات البرمجية؟",
+          "options": [
+            "تقليص حجم الذاكرة المستخدمة دائماً",
+            "جعل الكود أكثر وضوحاً وسهولة في الفهم لبعض المسائل المعقدة",
+            "تسريع التنفيذ مقارنة بالحلقات التكرارية دائماً",
+            "زيادة كفاءة المعالج تلقائياً"
+          ],
+          "correctAnswer": "جعل الكود أكثر وضوحاً وسهولة في الفهم لبعض المسائل المعقدة"
+        },
+        {
+          "id": "q_demo_3",
+          "type": "essay",
+          "questionText": "ما هي برأيك فائدة نظام المراقبة الذكي بالذكاء الاصطناعي وكيف يساهم في ضمان تكافؤ الفرص بين الطلاب؟"
+        }
+      ],
+      "results": []
+    }
+  ],
+  "fees": [
+    {
+      "_id": "fee_1",
+      "studentId": "student_1",
+      "semester": "Fall 2026",
+      "totalFees": 5000,
+      "amountPaid": 3200,
+      "remaining": 1800,
+      "receipts": []
+    },
+    {
+      "_id": "fee_1782666787799",
+      "studentId": "student_1782666787799",
+      "semester": "Fall 2026",
+      "totalFees": 4500,
+      "amountPaid": 0,
+      "remaining": 4500,
+      "receipts": []
+    }
+  ],
+  "notifications": [
+    {
+      "_id": "notif_1",
+      "departmentId": null,
+      "title": "Welcome to the New Academic Semester!",
+      "message": "Welcome all students! Please ensure your document uploads are complete in your profile and review the fee schedules for Fall 2026.",
+      "createdAt": "2026-06-28T15:50:55.735Z",
+      "readBy": []
+    }
+  ],
+  "complaints": []
+}
